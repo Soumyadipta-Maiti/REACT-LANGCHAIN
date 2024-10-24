@@ -1,0 +1,21 @@
+name: My First Git-Action Workflow
+on:
+  push:
+    branches:
+      -main
+
+env:
+  PROJECT_NAME: My First Git-Action Demo
+  PROJECT_VERSION: 1.0.0
+  AUTHOR: Soumya
+
+jobs:
+  myfirstjob:
+    runs-on: ubuntu-latest
+    steps:
+    - run: echo "chekout the repository"
+    - name: Checkout Repository
+    - uses: actions/checkout@v4
+    - run: printenv
+    - run: echo "Name of my Project is ${{env.PROJECT_NAME}} written by ${{env.AUTHOR}}"
+

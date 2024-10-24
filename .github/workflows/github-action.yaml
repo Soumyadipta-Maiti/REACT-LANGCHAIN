@@ -2,7 +2,7 @@ name: My First Git-Action Workflow
 on:
   push:
     branches:
-      -main
+      - main
 
 env:
   PROJECT_NAME: My First Git-Action Demo

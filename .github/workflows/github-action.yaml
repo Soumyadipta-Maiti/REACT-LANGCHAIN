@@ -13,9 +13,9 @@ jobs:
   myfirstjob:
     runs-on: ubuntu-latest
     steps:
-    - run: echo "chekout the repository"
+    - run: echo "checkout the repository"
     - name: Checkout Repository
-    - uses: actions/checkout@v4
+      uses: actions/checkout@v4
     - run: printenv
     - run: echo "Name of my Project is ${{env.PROJECT_NAME}} written by ${{env.AUTHOR}}"
 
